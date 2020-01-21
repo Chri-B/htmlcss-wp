@@ -26,15 +26,31 @@ body {
 /* centraggio header + margine superiore */
 header {
     height: 300px;
-    margin: 20px 0;
+    margin: 20px 0 60px;
     text-align: center;
+    position: relative;
 }
 
-header span {
+header .titolo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titolo span {
     font-size: 50px;
-    color: black;
-    border: 5px double black;
+    border: 5px double #ececec;
     padding: 5px;
+    color: #ececec;
+}
+
+.titolo p {
+    font-size: 25px;
+    color: #ececec;
+    padding-top: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 header img {
@@ -61,7 +77,7 @@ main .content {
     height: 100%;
 }
 /* stilizzazione e posizionamento footer */
- footer {
+footer {
     height: 100px;
     background: #ececec;
     margin: 20px 0;
@@ -88,9 +104,25 @@ h3 {
     margin-top: 10px;
     color: green;
 }
-/* !!!!problema stilizzazione icona!!!! */
+/* stilizzazione icona con width e height su INSPECTOR: Ora inv funziona con font-size??? */
 .left .content i {
     color: orange;
+    font-size: 40px;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 100%);
+}
+
+a {
+    margin: 0 50px;
+    line-height: 40px;
 }
 
 main .content {
@@ -112,6 +144,11 @@ main .content p, .right .content p {
     line-height: 25px;
 }
 
+.left .content i.fas.fa-rss-square {
+    width: 50px;
+    height: 50px;
+}
+
 .credits p {
     font-size: 15px;
     text-align: center;
@@ -121,9 +158,12 @@ main .content p, .right .content p {
 }
 
 .icone {
+    font-size: 50px;
     text-align: center;
+    color: gray;
 }
 
-i.fab.fa-facebook {
-    font-style: 20px;
+.icone i {
+    margin: 10px 10%;
+    line-height: 60px;
 }
