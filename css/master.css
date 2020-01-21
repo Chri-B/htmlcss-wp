@@ -10,14 +10,13 @@
     display: table;
     clear: both;
 }
-
+/* sfondo pagina e stile testo */
 body {
     background-image: url("https://www.stevens-wood.com/sites/default/files/swatches/L10-Formosa.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
 }
-
 /* centraggio container e dimensionamento larghezza (lunghezza varia in base a main) */
 .container {
     width: 60vw;
@@ -30,7 +29,7 @@ header {
     text-align: center;
     position: relative;
 }
-
+/* overlay scuro per miglior lettura titolo */
 .overlay {
     width: 100%;
     height: 100%;
@@ -38,21 +37,28 @@ header {
     padding: 8px;
     position: absolute;
 }
-/* stilizzazione header */
+/* centraggio header */
 header .titolo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.titolo span {
+/* stilizzazione icona montagna */
+.titolo i {
     font-size: 50px;
-    border: 5px double #ececec;
-    padding: 5px;
     color: #ececec;
+    display: block;
+    margin-bottom: 5px;
 }
-
+/* stilizzazione titolo */
+.titolo span {
+    font-size: 70px;
+    border: 5px solid #ececec;
+    color: #ececec;
+    padding: 5px;
+}
+/* stilizzazione sottotitolo */
 .titolo p {
     font-size: 25px;
     color: #ececec;
@@ -60,14 +66,14 @@ header .titolo {
     text-transform: capitalize;
     font-weight: bold;
 }
-
+/* dimensionamento img principale */
 header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border: 8px solid #ececec;
 }
-
+/* stilizzazione barra di navigazione */
 nav {
     width: 100%;
     height: 40px;
@@ -85,12 +91,12 @@ a {
     line-height: 40px;
     color: white;
 }
-
+/* effetto hover su links */
 a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
-
-/* colorazione differente link cliccato */
+/* colorazione viola link cliccato */
 a:visited {
     color: purple;
 }
@@ -118,22 +124,22 @@ footer {
     margin: 20px 0;
     border-radius: 5px;
 }
-
-aside .content {
+/* stilizzazione sfondo content e testo */
+.content {
     padding: 5px 10px;
     background-color: #ececec;
     text-transform: capitalize;
     border-radius: 5px;
     margin-bottom: 20px;
 }
-
+/* stilizzazione titoli h3 */
 h3 {
     font-size: 25px;
     text-align: center;
     text-transform: capitalize;
     color: rgb(77, 38, 0);
 }
-
+/* stilizzazione testo menu sx */
 .left .content p {
     font-size: 16px;
     margin-top: 10px;
@@ -143,47 +149,33 @@ h3 {
 .left .content i {
     color: orange;
     font-size: 40px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
 }
-
-main .content {
-    background-color: #ececec;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-main .content h2 {
-    text-align: center;
-    text-transform: capitalize;
-    color: rgb(77, 38, 0);
-}
-
+/* stilizzazione testo menu dx e main */
 main .content p, .right .content p {
     margin: 40px 0 20px;
     font-size: 12px;
     font-weight: normal;
     line-height: 25px;
 }
-
-.left .content i.fas.fa-rss-square {
-    width: 50px;
-    height: 50px;
-}
-
+/* bordo sotto testo footer */
 .credits p {
+    border-bottom: 1px solid gray;
+}
+/* stilizzazione testo footer */
+.credits {
     font-size: 15px;
     text-align: center;
     font-style: oblique;
     color: gray;
-    border-bottom: 1px solid gray;
 }
-
-.icone {
-    font-size: 50px;
-    text-align: center;
-    color: gray;
-}
-
+/* stilizzazione icone footer */
 .icone i {
+    font-size: 50px;
+    color: gray;
     margin: 10px 10%;
     line-height: 60px;
 }
