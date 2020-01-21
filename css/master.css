@@ -1,0 +1,110 @@
+/* reset parametri css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* classe clearfix per float */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: url("https://www.stevens-wood.com/sites/default/files/swatches/L10-Formosa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* centraggio container e dimensionamento larghezza (lunghezza varia in base a main) */
+.container {
+    width: 60vw;
+    margin: 0 auto;
+}
+/* centraggio header + margine superiore */
+header {
+    height: 300px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 8px solid #ececec;
+}
+/* stilizzazione e posizionamento menu laterali */
+aside {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+/* creazione box e collocamento con float left, aggiunta margine 2% left e superiore */
+main {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0 20px;
+}
+/* creazione box centrale con sfondo */
+main .content {
+    height: 100%;
+}
+/* stilizzazione e posizionamento footer */
+ footer {
+    height: 100px;
+    background: #ececec;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+aside .content {
+    padding: 5px 10px;
+    background-color: #ececec;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(77, 38, 0);
+}
+
+.left .content p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: green;
+}
+/* !!!!problema stilizzazione icona!!!! */
+.left .content i {
+    color: orange;
+}
+
+main .content {
+    background-color: #ececec;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main .content h2 {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(77, 38, 0);
+}
+
+main .content p, .right .content p {
+    margin: 40px 0 20px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.right .content {
+
+}
