@@ -26,8 +26,15 @@ body {
 /* centraggio header + margine superiore */
 header {
     height: 300px;
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: center;
+}
+
+header span {
+    font-size: 50px;
+    color: black;
+    border: 5px double black;
+    padding: 5px;
 }
 
 header img {
@@ -57,7 +64,7 @@ main .content {
  footer {
     height: 100px;
     background: #ececec;
-    margin: 10px 0;
+    margin: 20px 0;
     border-radius: 5px;
 }
 
@@ -105,6 +112,18 @@ main .content p, .right .content p {
     line-height: 25px;
 }
 
-.right .content {
+.credits p {
+    font-size: 15px;
+    text-align: center;
+    font-style: oblique;
+    color: gray;
+    border-bottom: 1px solid gray;
+}
 
+.icone {
+    text-align: center;
+}
+
+i.fab.fa-facebook {
+    font-style: 20px;
 }
